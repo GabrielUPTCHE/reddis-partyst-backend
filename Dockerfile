@@ -1,2 +1,5 @@
-FROM redis:7-alpine
+FROM redis:7.2
+
+EXPOSE 6379
+
 CMD ["redis-server", "--appendonly", "yes"]

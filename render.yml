@@ -1,0 +1,9 @@
+services:
+  - type: private_service
+    name: redis-partyst
+    env: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: false
+    plan: starter
+    ports:
+      - port: 6379
